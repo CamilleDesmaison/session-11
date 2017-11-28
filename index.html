@@ -1,18 +1,385 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Session 11</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <div class="app container my-5">
-      <h1>Hello world</h1>
-      <p>Happy {{ day }}! It's {{ now.getHours() }}:{{ now.getMinutes() }}.</p>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Affaire Levothyrox</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet prefetch'>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right btn-nav">
+          <li class="page-scroll">
+            <a class="btn-nav" href="#chapo">Haut de page</a> <!-- à changer -->
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+  <header id="chapo" style="background: SlateGray;position: relative;width: 100%;height: 100vh;box-sizing: border-box;display: block;">
+    <div style="position: absolute; width: 100%; height: 50%; bottom: 0; opacity: 0.8; background: linear-gradient(to top,#000 0,rgba(0,0,0,0.5) 30%,transparent 100%);">
+    </div>
+    <img alt="" src="levo.jpg" style="opacity: 1;object-fit: cover !important;width: 100%;height: 100%;">
+
+    <div style="position: absolute;width: 100%;bottom: 0px;z-index: 20;">
+      <h1>Affaire Levothyrox,:<br>
+      chronologie d’une crise sanitaire et politique<br></h1>
+
+      <hr style="width: 250px !important; margin: 20px auto 20px auto !important; height: 4px !important; background: #778899 !important; border-top: 1px solid #FFFFFF !important;">
+
+
+      <p class="p-header">Depuis l’annonce du laboratoire Merck de l’entrée sur le marché d’une nouvelle formule du Levothyrox - médicament pour soigner la thyroïde -, les plaintes et enquêtes se sont multipliées. Retour sur six mois de crise.</p>
+    </div>
+  </header>
+
+
+  <section class="timeline" id="timeline">
+    <div class="container">
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content js--fadeInLeft">
+          <div class="timeline-img-header" style="background-image: url('newformule.jpg');">
+            <h2>L'annonce de la commercialisation d'une nouvelle formule du Levothyrox</h2>
+          </div>
+
+          <div class="date">
+            1er mars 2017
+          </div>
+
+
+          <p>Sur une demande de l’Association Nationale de la Sécurité du Médicament (ANSM), le laboratoire allemand Merck annonce la sortie d’une nouvelle formule de son médicament anti-thyroïdien, le Levothyrox. Le but de cette nouvelle formule : garantir la stabilité de la teneur en substance active tout le long de la durée de conservation du médicament. Afin d’être sûr que l’information sur le changement de certains composants est bien diffusée, le laboratoire met en place “un plan de communication large touchant plus de 100 000 professionnels de la santé” selon Sylvie Chabac, directrice des affaires médicales chez Merck France. La couleur des boîtes du Levothyrox change aussi..</p>
+          <a class="bnt-more" href="http://ansm.sante.fr/S-informer/Points-d-information-Points-d-information/Levothyrox-levothyroxine-changement-de-formule-et-de-couleur-des-boites-Point-d-Information">More</a>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>Une pétition est lancée en ligne contre la nouvelle formule</h2>
+
+
+          <div class="date">
+            24 juin 2017
+          </div>
+
+
+          <p>Les premiers désagréments et troubles sont médiatisés en juin 2017, lorsqu’une patiente lance une pétition en ligne. Le laboratoire Merck répond à ces inquiétudes en expliquant que la formule est totalement identique à l’ancienne, seuls des nouveaux composants auraient été ajoutés, comme le l’acide citrique qui remplace le lactose.</p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+
+
+        <div class="timeline-content  js--fadeInLeft">
+          <h2>Les plaintes se multiplient</h2>
+
+
+          <div class="date">
+            23 août 2017
+          </div>
+
+
+          <p>On atteint un pic mi-août, où les plaintes sur les forums, les réseaux sociaux ou auprès des médecins sont médiatisées. Merck ne démord pas, et parle d’effets secondaires transitoires.</p>
+          <a class="bnt-more" href="http://www.lepoint.fr/editos-du-point/anne-jeanblanc/nouveau-levothyrox-la-deferlante-des-plaintes-28-08-2017-2152684_57.php">More</a>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img"></div>
+
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>5000 déclarations d’effets indésirables recensés”</h2>
+
+
+          <div class="date">
+            1er septembre 2017
+          </div>
+
+
+          <p>Depuis la commercialisation de la nouvelle formule, l’ANSM estime que 5000 déclarations d’effets indésirables ont été recensés.</p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content  js--fadeInLeft">
+          <h2>L’ANSM admet un défaut de communication sur le changement de formule</h2>
+
+
+          <div class="date">
+            2 septembre 2017
+          </div>
+
+
+          <p>L’Agence Nationale de la Sécurité du Médicament reconnaît que les patients ont été mal informés du changement de formule du traitement.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/sante/article/2017/09/01/levothyrox-l-agence-du-medicament-reconnait-que-les-patients-n-ont-pas-ete-assez-informes_5179559_1651302.html">More</a>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>Des patients annoncent leur volonté de déposer plainte</h2>
+
+
+          <div class="date">
+            8 septembre 2017
+          </div>
+
+
+          <p>Des patients annoncent leur volonté de déposer plainte contre X, afin de mettre en cause les autorités sanitaires et le laboratoire Merck.</p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content js--fadeInLeft">
+
+          <div class="timeline-img-header" style="background-image: url('buzyn.jpg'); background-size: contain; background-repeat: no-repeat;">
+            <h2 style="color:#2F4F4F; text-shadow:#ff0000"> La ministre de la Santé réagit</h2>
+          </div>
+
+          <div class="date">
+            15 septembre 2017
+          </div>
+
+
+          <p>La ministre de la Santé annonce que l’ancienne formule du Levothyrox sera accessible dans quinze jours, mais de manière temporaire. En effet, elle maintient que la nouvelle formule est meilleure. Elle ajoute que des alternatives au Lévothyrox seront accessibles dans un mois. Pour le moment, le seul médicament concurrent autorisé en France est fabriqué par le laboratoire Serb, qui s’engage à doubler sa production le plus rapidement possible. Mais même si ce médicament de substitution est envisageable, pas sur que les médecins des patients autorisent ce changement : une fois le patient stabilisé avec le Levothyrox, les médecins préfèrent ne pas prendre de risques.</p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content  js--fadeInRight">
+          
+          <h2>La justice se saisit de l’affaire</h2>
+
+
+          <div class="date">
+            15 septembre 2017
+          </div>
+
+
+          <p>Une enquête préliminaire est confiée au pôle de santé publique du Tribunal de grande instance de Marseille. L’enquête doit se pencher sur la responsabilité de l’ancienne ministre de la Santé, Marisol Touraine, de l’Agence Nationale de Sécurité du Médicament, et du laboratoire Merck. A ce jour, plus de 9 000 personnes ont déclaré des effets indésirables attribués à la nouvelle formule du Levothyrox.</p>
+          <a class="bnt-more" href="http://www.lemonde.fr/sante/article/2017/09/15/levothyrox-le-parquet-de-marseille-ouvre-une-enquete-preliminaire_5186450_1651302.html">More</a>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content  js--fadeInLeft">
+          <h2 class="">La proposition d’une commission d’indemnisation</h2>
+
+
+          <div class="date">
+            25 septembre 2017
+          </div>
+
+
+          <p>Un avocat toulousain propose au gouvernement création d'une commission nationale d'indemnisation des personnes souffrant d'effets liés à la nouvelle formule du Levothyrox, pour éviter un engorgement des tribunaux.</p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content js--fadeInRight">
+          <h2>Le retour de l’ancienne formule du Levothyrox</h2>
+
+
+          <div class="date">
+            2 octobre 2017
+          </div>
+
+
+          <p>Un nombre restreint d’Eurothyrox -nom de l’ancienne formule du Levothyrox - venant d’Allemagne est acheminé en France. En deux jours, la moitié des 13 000 boîtes est vendu.</p>
+          <a class="bnt-more" href="https://www.lci.fr/sante/levothyrox-l-ancienne-formule-de-retour-lundi-prochain-medicament-thyroide-sante-agnes-buzyn-2065520.html">More</a>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content  js--fadeInLeft">
+          <h2>Les résultats d’une enquête de pharmacovigilance publiés par l’ANSM</h2>
+
+
+          <div class="date">
+            12 octobre 2017
+          </div>
+
+
+          <p>L’ANSM publie les résultats d’une enquête de pharmacovigilance lancée mi-septembre. Au total, 14 600 cas d’effets indésirables liés au changement de formule ont été recensés, dont plus de 5 000 cas graves.</p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-img">
+        </div>
+
+
+        <div class="timeline-content  js--fadeInRight">
+          <h2 class="">Une alternative au Levothyrox commercialisée</h2>
+
+
+          <div class="date">
+            16 octobre 2017
+          </div>
+
+
+          <p>Le laboratoire Sanofi commercialise le L-Thyroxin Henning, une alternative à la nouvelle formule du Levothyrox.</p>
+          <a class="bnt-more" href="http://www.sanofi.fr/l/fr/fr/layout.jsp?cnt=1952321C-0055-4414-BBCC-7CE99D73ED17">More</a>
+        </div>
+      </div>
+
+
+    <div class="timeline-item">
+      <div class="timeline-img">
+      </div>
+
+
+      <div class="timeline-content  js--fadeInLeft">
+        <div><img alt="" class="img-responsive hvrbox-layer_bottom" src="lemairebuzyn.jpg">
+        </div>
+
+
+        <h2 class="">Les ministres Agnès Buzyn et Bruno Le Maire visés par une plainte</h2>
+
+
+        <div class="date">
+          12 novembre 2017
+        </div>
+
+
+        <p>La ministre de la Santé et le ministre de l'Economie sont visés par une plainte déposée au tribunal de Grasse (Alpes-Maritime) pour "non-assistance à personne en danger" par une patiente sous Levothyrox et qui se plaint d'effets secondaires liés à la nouvelle formule du médicament.</p>
+        <a class="bnt-more" href="https://www.francetvinfo.fr/sante/levothyrox/levothyrox-agnes-buzyn-et-bruno-le-maire-vises-par-une-plainte_2464696.html">More</a>
+      </div>
     </div>
 
-    <script src="vendors/vue.min.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+    <div class="timeline-item">
+      <div class="timeline-img">
+      </div>
+
+
+      <div class="timeline-content  js--fadeInRight">
+        <h2 class="">Le laboratoire Merck condamné à fournir l’ancienne formule du Levothyrox</h2>
+
+
+        <div class="date">
+          14 novembre 2017
+        </div>
+
+
+        <p>Le Tribunal de grand instance de Toulouse, qui avait été saisi par 90 patients, a condamné le laboratoire Merck à fournir l’ancienne formule à 25 d’entre eux. Merck France va faire appel, mais a annoncé l’importation de 200 000 boîtes supplémentaires.</p>
+        <a class="bnt-more" href="http://www.lefigaro.fr/actualite-france/2017/11/14/01016-20171114ARTFIG00345-merck-condamne-a-fournir-l-ancienne-formule-du-levothyrox.php">More</a>
+      </div>
+    </div>
+
+
+    <div class="timeline-item">
+      <div class="timeline-img">
+      </div>
+
+
+      <div class="timeline-content  js--fadeInLeft">
+        <h2 class="">Une autre alternative au Levothyrox est annoncée</h2>
+
+
+        <div class="date">
+          17 novembre 2017
+        </div>
+
+
+        <p>Une alternative supplémentaire au Levothyrox, le Thyrofix, du laboratoire Unipharma, sera disponible à partir de la première semaine de décembre, a annoncé, vendredi 17 novembre, la direction générale de la santé (DGS).</p>
+        <a class="bnt-more" href="http://www.lemonde.fr/sante/article/2017/11/17/levothyrox-arrivee-d-un-medicament-alternatif-supplementaire-debut-decembre_5216698_1651302.html">More</a>
+      </div>
+    </div>
+        </div>
+  </section>
+
+
+  <section id="dossier" style="margin-bottom: 30px; background-color: #f5f5f5; margin-bottom: 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4 style="color: #2F4F4F;font-family: Helvetica, monospace;">A ce jour, deux plaintes et une action collective ont été déposées au cours l'affaire Levothyrox. Environ 15 000 signalements d'effets indésirables liés à la nouvelle formule du Levothyrox ont été recensés.</h4>
+
+          <hr style="width: 50% !important; border-top:0px; opacity : 0.7; height: 2px !important; background: #2F4F4F !important;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="text-center" style="background-color: SlateGray; opacity: 0.7;">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-4">
+          <h4 style="color: White; font-family: Helvetica, sans-serif; font-size: 20px;">Camille Desmaison-Fernandez</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'>
+  </script> 
+  <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'>
+  </script> 
+  <script src="js/index.js">
+  </script>
+</body>
 </html>
